@@ -1,0 +1,162 @@
+/* Header */
+
+.header {
+    background-color: darkviolet;
+    font-family: sans-serif;
+}
+
+
+/* Content */
+
+.content {
+    background-color: red;
+}
+
+.box {
+    background-color: tomato;
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+}
+
+.box .box-header {
+    width: 100%;
+    height: 30px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+}
+
+.btn-container {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+
+.box-header .heading {
+    padding: 2px;
+    margin: 2px;
+}
+
+.btn-container div {
+    margin: 2px;
+    background-color: brown;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.box textarea {
+    height: 85%;
+    width: 100%;
+    /* outline: none; */
+    border: none;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+.error {
+    color: red;
+    font-weight: normal;
+    margin-bottom: 15px;
+    animation: zoom 2000ms ease-in-out;
+}
+
+.gayab {
+    display: none;
+}
+
+@keyframes zoom {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Dailog-box */
+
+.dialog-box {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: lightslategray;
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-box .dialog {
+    height: 200px;
+    width: 200px;
+    background-color: skyblue;
+}
+
+.dialog .dialog-header {
+    text-align: center;
+    background-color: skyblue;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.dialog-heading input {
+    width: 120px;
+}
+
+.dialog-body {
+    height: 100px;
+    padding: 5px;
+}
+
+.dialog-body textarea {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3px;
+}
+
+.dialog .submit {
+    display: flex;
+    justify-content: center;
+}
+
+.cross {
+    height: 20px;
+    width: 20px;
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}

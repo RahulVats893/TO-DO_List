@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="header">
+            <div class="heading">JIRA</div>
+            <div class="btn">
+                <div class="plus" id="addbtn">+</div>
+            </div>
+
+        </div>
+        <div class="content">
+        </div>
+        <div class="footer">RAH'INES <span>@Copyright</span> <span>2022</span></div>
+    </div>
+    <div class="dialog-box" id="dialogboxjs">
+        <div class="dialog">
+            <div class="dialog-header">
+                <div class="dialog-heading">
+                    <input type="text" id="title">
+                </div>
+                <div class="cross" id="closebtn">X</div>
+            </div>
+            <div class="dialog-body">
+                <textarea id="todo_text"></textarea>
+            </div>
+            <div class="error gayab">
+                Title or description can't be empty.
+            </div>
+            <div class="submit">
+                <button onclick="todo()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
